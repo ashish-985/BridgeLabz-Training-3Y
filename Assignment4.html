@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Ashish Arya">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="HTML Assignment 4 - 20 questions">
+<title>HTML Assignment 4</title>
+<base href="./">
+<link rel="icon" href="favicon.ico">
+<style></style>
+<script></script>
+</head>
+<body>
+<h1>HTML Assignment 4</h1>
+<hr>
+
+<h2>1. YouTube Video</h2>
+<iframe width="80%" height="50%" src="https://www.youtube.com/embed/cjLhuG3MK68" title="YouTube Video"></iframe>
+<p>Original link: https://www.youtube.com/watch?v=cjLhuG3MK68</p>
+<hr>
+
+<h2>2. Google Map</h2>
+<!-- loading="lazy" delays loading the map until it is close to being visible. -->
+<iframe src="https://www.google.com/maps?q=Etawah%2C%20Uttar%20Pradesh&output=embed" title="Google Map of Etawah" width="600" height="450" loading="lazy"></iframe>
+<hr>
+
+<h2>3. Two Iframes</h2>
+<iframe width="600" height="250" title="Introduction Page" srcdoc="<html><body><h2>My Introduction</h2><p>Hello! My name is Ashish Arya.</p><p>I am a Computer Science Engineering student interested in Cybersecurity and Web Development.</p></body></html>"></iframe>
+<br><br>
+<iframe width="600" height="250" title="Favorite Hobby Page" srcdoc="<html><body><h2>My Favorite Hobby</h2><p>My favorite hobby is learning about technology.</p><p>I enjoy programming, cybersecurity and exploring new technologies.</p></body></html>"></iframe>
+<hr>
+
+<h2>4. Frameset Layout</h2>
+<p>The frameset element is obsolete in HTML5 but is demonstrated here as required by the assignment.</p>
+<iframe width="800" height="300" title="Frameset Demonstration" srcdoc='<html><frameset rows="30%,70%"><frame srcdoc="<html><body><a href=&quot;#&quot;>Home</a> | <a href=&quot;#&quot;>About</a> | <a href=&quot;#&quot;>Contact</a></body></html>"><frame srcdoc="<html><body><h2>Welcome to My Website</h2></body></html>"></frameset></html>'></iframe>
+<hr>
+
+<h2>5. UTF-8 Encoding</h2>
+<p>English: Welcome to my webpage.</p>
+<p>Hindi: मेरी वेबसाइट में आपका स्वागत है।</p>
+<p>Japanese: 私のウェブページへようこそ。</p>
+<hr>
+
+<h2>6. User Registration Form</h2>
+<form>
+<label>Full Name:</label><input type="text" name="fullname" required><br><br>
+<label>Email Address:</label><input type="email" name="email" required><br><br>
+<label>Password:</label><input type="password" name="password" required><br><br>
+<label>Confirm Password:</label><input type="password" name="confirm_password" required><br><br>
+<input type="submit" value="Register">
+</form>
+<hr>
+
+<h2>7. Login Form with CSRF Token</h2>
+<form>
+<label>Username:</label><input type="text" name="username" required><br><br>
+<label>Password:</label><input type="password" name="password" required><br><br>
+<!-- A CSRF token helps prevent attackers from making unauthorized requests on behalf of a logged-in user. -->
+<input type="hidden" name="csrf_token" value="dummy12345">
+<input type="submit" value="Login">
+</form>
+<hr>
+
+<h2>8. Feedback Form</h2>
+<form method="post" action="#">
+<label>Feedback:</label><br><textarea name="feedback" rows="5" cols="40"></textarea><br><br>
+<label>Rating:</label><br>
+<input type="radio" name="rating" value="Good">Good<br>
+<input type="radio" name="rating" value="Average">Average<br>
+<input type="radio" name="rating" value="Poor">Poor<br><br>
+<input type="submit" value="Submit Feedback">
+</form>
+<hr>
+
+<h2>9. File Upload Form</h2>
+<p>Only JPG and PNG image files are allowed.</p>
+<form><label>Select Image:</label><input type="file" name="image" accept=".jpg,.png" required><br><br><input type="submit" value="Upload"></form>
+<hr>
+
+<h2>10. Contact Form</h2>
+<form>
+<label>Full Name:</label><input type="text" name="fullname" placeholder="Enter your full name" required><br><br>
+<label>Email:</label><input type="email" name="email" placeholder="Enter your email" required><br><br>
+<label>Subject:</label><input type="text" name="subject" placeholder="Enter subject" required><br><br>
+<label>Message:</label><br><textarea name="message" rows="5" cols="40" placeholder="Enter your message" required></textarea><br><br>
+<input type="submit" value="Send Message">
+</form>
+<hr>
+
+<h2>11. Student Information</h2>
+<form>
+<label>Name:</label><input type="text" name="name" required><br><br>
+<label>Roll Number:</label><input type="text" name="roll_number" required><br><br>
+<label>Course:</label>
+<select name="course" required>
+<option value="" disabled selected>Select Course</option>
+<option value="CSE">Computer Science Engineering</option>
+<option value="IT">Information Technology</option>
+<option value="ECE">Electronics and Communication Engineering</option>
+<option value="ME">Mechanical Engineering</option>
+</select><br><br>
+<input type="submit" value="Submit">
+</form>
+<hr>
+
+<h2>12. HTML Entities</h2>
+<p>Less than: &lt; | Greater than: &gt; | Ampersand: &amp; | Double Quote: &quot; | Single Quote: &apos; | Copyright: &copy; | Trademark: &trade; | Registered: &reg;</p>
+<hr>
+
+<h2>13. Three Languages</h2>
+<p>English: Welcome to my website.</p>
+<p>Hindi: मेरी वेबसाइट में आपका स्वागत है।</p>
+<p>French: Bienvenue sur mon site web.</p>
+<hr>
+
+<h2>14. External Website</h2>
+<iframe src="https://www.wikipedia.org" width="800" height="500" title="Wikipedia"></iframe>
+<p>Some websites may not allow embedding for security reasons.</p>
+<hr>
+
+<h2>15. Payment Form</h2>
+<form>
+<label>Cardholder Name:</label><input type="text" name="cardholder" required><br><br>
+<label>Card Number:</label><input type="text" name="card_number" required><br><br>
+<label>Expiry Date:</label><input type="month" name="expiry" required><br><br>
+<label>CVV:</label><input type="password" name="cvv" required><br><br>
+<input type="submit" value="Pay Now">
+</form>
+<hr>
+
+<h2>16. URI Encoding</h2>
+<p>Encoded URL:</p>
+<a href="https://example.com/search?query=HTML%20%26%20CSS">Search HTML &amp; CSS</a>
+<p>HTML%20%26%20CSS</p>
+<hr>
+
+<h2>17. Form Submission using iframe</h2>
+<form action="#result" target="resultFrame">
+<label>Enter Text:</label><input type="text" name="text" required>
+<input type="submit" value="Submit">
+</form>
+<br>
+<iframe name="resultFrame" width="600" height="150" title="Form Result" srcdoc="<html><body><p>Submit the form to display the result.</p></body></html>"></iframe>
+<div id="result"><p>Form successfully submitted.</p></div>
+<hr>
+
+<h2>18. Quotations</h2>
+<blockquote>Learning HTML is an important step in web development. HTML provides the structure of a webpage and allows us to organize text, images, forms and other content. Remember that &lt;HTML&gt; is the foundation of a webpage.</blockquote>
+<p>My teacher always says, <q>Practice makes perfect.</q></p>
+<hr>
+
+<h2>19. Form Security Attributes</h2>
+<form autocomplete="off">
+<label>Username:</label><input type="text" name="username" required><br><br>
+<label>Email:</label><input type="email" name="email" required><br><br>
+<label>Password:</label><input type="password" name="password" required><br><br>
+<input type="submit" value="Submit">
+</form>
+<p>Turning off autocomplete can reduce the amount of sensitive information automatically stored or suggested by the browser.</p>
+<hr>
+
+<h2>20. Important Head Elements</h2>
+<ul>
+<li><strong>&lt;title&gt;</strong> - Defines the title shown in the browser tab.</li>
+<li><strong>&lt;meta&gt;</strong> - Provides metadata such as charset, description and author.</li>
+<li><strong>&lt;base&gt;</strong> - Defines the base URL for relative URLs.</li>
+<li><strong>&lt;link&gt;</strong> - Connects external resources such as a favicon.</li>
+<li><strong>&lt;style&gt;</strong> - Defines CSS within the HTML document.</li>
+<li><strong>&lt;script&gt;</strong> - Adds JavaScript to the webpage.</li>
+</ul>
+<hr>
+<h2>End of Assignment</h2>
+</body>
+</html>
