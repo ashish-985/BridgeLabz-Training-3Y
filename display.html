@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yellow Box</title>
+
+    <style>
+        body {
+            background-color: rgb(126, 170, 184);
+        }
+
+        .container {
+            width: 700px;
+            height: 400px;
+            background-color: yellow;
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: left;
+
+            border: 2px solid black;
+            margin: 20px;
+        }
+
+        .child,
+        .child2,
+        .child3,
+        .child4 {
+            width: 150px;
+            height: 100px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border: 2px solid black;
+        }
+
+        .child {
+            background-color: red;
+        }
+
+        .child2 {
+            background-color: rgb(28, 176, 97);
+        }
+
+        .child3 {
+            background-color: royalblue;
+        }
+
+        .child4 {
+            background-color: orange;
+        }
+
+        .container {
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="child">
+           
+        </div>
+        <div class="child2">
+           
+        </div>
+        <div class="child3">
+        </div>
+        <div class="child4">
+        </div>
+    </div>
+
+</body>
+</html>
