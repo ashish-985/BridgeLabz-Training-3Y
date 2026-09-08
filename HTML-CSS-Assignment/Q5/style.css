@@ -1,0 +1,13 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background-color: #f1f5f9; }
+.pricing { padding: 60px 8%; text-align: center; }
+.pricing h1 { margin-bottom: 40px; }
+.plans { display: flex; gap: 25px; align-items: stretch; }
+.plan { flex: 1; padding: 30px; background-color: white; border: 2px solid #cbd5e1; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.15); transition: transform 0.3s, background-color 0.3s; display: flex; flex-direction: column; }
+.plan:hover { transform: scale(1.05); background-color: #e0f2fe; }
+.price { font-size: 1.5rem; font-weight: bold; margin: 20px 0; }
+.plan ul { text-align: left; line-height: 2; flex: 1; }
+.plan a { display: inline-block; background-color: #2563eb; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; }
+.plan a:hover { background-color: #1e40af; }
+.popular { border: 3px solid #f59e0b; }
+@media (max-width: 700px) { .plans { flex-direction: column; } }
