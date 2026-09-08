@@ -1,0 +1,11 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; color: white; }
+header { background-color: #111827; padding: 25px; text-align: center; }
+nav { margin-top: 15px; }
+nav a { color: white; text-decoration: none; margin: 0 15px; }
+.gradient-one { min-height: 100vh; background: linear-gradient(135deg, #2563eb, #9333ea); padding: 15vh 10%; text-align: center; }
+.gradient-two { min-height: 100vh; background: radial-gradient(circle, #f59e0b, #dc2626); padding: 15vh 10%; text-align: center; }
+.culture { min-height: 100vh; background-image: url("https://via.placeholder.com/1600x900"); background-size: cover; background-position: center; background-attachment: fixed; padding: 15vh 10%; text-align: center; }
+h2 { font-size: 3rem; font-weight: 700; margin-bottom: 30px; }
+p { font-size: 1.2rem; line-height: 1.8; border: 2px solid white; padding: 20px; }
+footer { background-color: #111827; padding: 30px; text-align: center; }
