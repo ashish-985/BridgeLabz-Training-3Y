@@ -1,0 +1,1 @@
+.card{transition:transform .3s,box-shadow .3s}.card:hover{transform:translateY(-8px);box-shadow:0 1rem 2rem rgba(0,0,0,.18)!important}.card ul{line-height:2}.pro{transform:scale(1.03)}
