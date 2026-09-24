@@ -1,0 +1,2 @@
+/* Bootstrap handles the responsive grid; custom hero styling adds visual hierarchy. */
+.hero{min-height:60vh;display:flex;align-items:center;background:linear-gradient(135deg,#eef4ff,#fff)}.hero .card{transition:.3s}.hero .card:hover{transform:translateY(-4px)}
