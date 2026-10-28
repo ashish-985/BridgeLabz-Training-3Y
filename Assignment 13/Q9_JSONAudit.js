@@ -1,6 +1,5 @@
 "use strict";
 
-// Q9: JSON Audit
 const rawData = [
     '{"user":"Alex","age":25}',
     '{"id":2}',
@@ -15,7 +14,6 @@ const under18Users = [];
 for (let index = 0; index < rawData.length; index++) {
     const lineNumber = index + 1;
     const rawEntry = rawData[index];
-    debugger; // Watch lineNumber, rawEntry, parsedEntry, and auditErrors.
 
     try {
         const parsedEntry = JSON.parse(rawEntry);
