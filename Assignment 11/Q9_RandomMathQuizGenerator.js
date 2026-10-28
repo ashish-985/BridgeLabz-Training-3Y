@@ -1,6 +1,3 @@
-// Q9: Random Math Quiz Generator
-
-// Generate two random integers from 1 through 20.
 const firstNumber = Math.floor(Math.random() * 20) + 1;
 const secondNumber = Math.floor(Math.random() * 20) + 1;
 const operators = ["+", "-", "*", "/"];
@@ -8,7 +5,6 @@ const randomOperator = operators[Math.floor(Math.random() * operators.length)];
 
 let correctAnswer;
 
-// Use switch to perform the selected arithmetic operation.
 switch (randomOperator) {
     case "+":
         correctAnswer = firstNumber + secondNumber;
