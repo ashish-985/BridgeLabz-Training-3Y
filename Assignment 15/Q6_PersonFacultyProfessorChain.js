@@ -1,6 +1,5 @@
 "use strict";
 
-// Q6: Person -> Faculty -> Professor prototype chain.
 function Person(name) {
     this.name = name;
 }
@@ -30,7 +29,6 @@ Professor.prototype.showSubject = function () {
 
 const professor = new Professor("Dr Rao", "Computer Science", "JavaScript");
 
-// The instance finds each method on its own prototype or an ancestor prototype.
 professor.introduce();
 professor.showDepartment();
 professor.showSubject();
