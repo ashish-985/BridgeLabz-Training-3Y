@@ -1,20 +1,15 @@
 "use strict";
 
-// Q1: Dynamic Data Parser
 const apiData = ["25", "true", "false", "NaN", " ", "100px", "3.14", null, undefined];
 const validNumericData = [];
 const invalidNumericData = [];
 
-// Number() converts each entry for numeric validation; Boolean() and String()
-// are also shown so the different type conversions can be compared.
 for (let index = 0; index < apiData.length; index++) {
     const originalValue = apiData[index];
     const numericValue = Number(originalValue);
     const booleanValue = Boolean(originalValue);
     const stringValue = String(originalValue);
 
-    // NaN results (including undefined, "NaN", and "100px") are invalid.
-    // Whitespace-only strings are rejected explicitly because Number(" ") is 0.
     const isWhitespaceOnly = typeof originalValue === "string" && originalValue.trim() === "";
     const isValidNumber = !Number.isNaN(numericValue) && !isWhitespaceOnly;
 
