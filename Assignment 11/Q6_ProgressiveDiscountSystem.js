@@ -1,10 +1,6 @@
-// Q6: Progressive Discount System
-
-// Sample purchase total in rupees; change this value to test other tiers.
 const purchaseTotal = 6500;
 let discountPercentage;
 
-// Apply only the highest discount tier that the purchase qualifies for.
 if (purchaseTotal >= 10000) {
     discountPercentage = 25;
 } else if (purchaseTotal >= 5000) {
