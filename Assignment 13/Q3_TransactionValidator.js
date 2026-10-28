@@ -1,6 +1,5 @@
 "use strict";
 
-// Q3: Transaction Validator
 const transactions = [
     { id: 1, amount: 2000 },
     { id: 2, amount: -500 },
@@ -11,7 +10,6 @@ const transactions = [
 const validTransactions = [];
 const invalidTransactions = [];
 
-// Custom error class makes each validation failure easy to categorize.
 class TransactionValidationError extends Error {
     constructor(category, message) {
         super(message);
@@ -23,7 +21,6 @@ class TransactionValidationError extends Error {
 for (let index = 0; index < transactions.length; index++) {
     const transaction = transactions[index];
     let currentState = "starting validation";
-    debugger; // Set a breakpoint here and watch index, transaction, and currentState.
 
     try {
         currentState = "checking null entry";
