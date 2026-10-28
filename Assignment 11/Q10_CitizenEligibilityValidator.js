@@ -1,7 +1,9 @@
 const age = 19;
 const isCitizen = true;
 
-if (isCitizen) {
+if (age < 0) {
+    console.log("Invalid age.");
+} else if (isCitizen) {
 
     if (age >= 18 && age <= 20) {
         console.log("Eligible to vote only.");
