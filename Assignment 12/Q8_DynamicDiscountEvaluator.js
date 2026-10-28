@@ -1,16 +1,12 @@
-// Q8: Dynamic Discount Evaluator
-
 const cart = [
     { item: "Laptop", category: "electronics", price: 45000 },
     { item: "Shoes", category: "fashion", price: 2500 },
     { item: "Book", category: "education", price: 600 }
 ];
 
-// Calculate the original cart value with reduce().
 const originalTotal = cart.reduce((total, product) => total + product.price, 0);
 let discountedTotal = 0;
 
-// Apply category-specific discounts to each product.
 const discountedCart = cart.map((product) => {
     let discountRate = 0;
 
@@ -33,7 +29,6 @@ const discountedCart = cart.map((product) => {
     };
 });
 
-// Apply an extra 5% to the discounted cart total if original cart value exceeds ₹50,000.
 const extraDiscountRate = originalTotal > 50000 ? 0.05 : 0;
 const extraDiscountAmount = discountedTotal * extraDiscountRate;
 const finalTotal = discountedTotal - extraDiscountAmount;
