@@ -1,8 +1,7 @@
 "use strict";
 
-// Q2: Apply an operation to each number using a callback.
 function applyOperation(numbers, operation) {
-    // map() calls the supplied callback once for each array element.
+
     return numbers.map(operation);
 }
 
