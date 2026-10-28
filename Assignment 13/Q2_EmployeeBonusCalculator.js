@@ -1,6 +1,5 @@
 "use strict";
 
-// Q2: Employee Bonus Calculator
 const employees = [
     { name: "Amit", salary: "45000", years: "5" },
     { name: "Sara", salary: "38000", years: "2" },
@@ -9,7 +8,7 @@ const employees = [
 
 for (const employee of employees) {
     try {
-        // Validate required properties before converting their string values.
+
         if (!employee || typeof employee.name !== "string" ||
             employee.salary === undefined || employee.years === undefined) {
             throw new Error("Missing employee name, salary, or years property.");
@@ -29,6 +28,3 @@ for (const employee of employees) {
         console.log(`Could not process employee record: ${error.message}`);
     }
 }
-
-// Strict mode prevents accidental assignment to undeclared identifiers.
-// All variables above are explicitly declared with const.
