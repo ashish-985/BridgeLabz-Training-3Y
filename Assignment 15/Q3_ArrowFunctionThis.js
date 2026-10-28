@@ -4,7 +4,7 @@ const user = {
     name: "Ashish",
     showName: () => {
 
-        console.log(`Arrow function this.name: ${this.name}`);
+        console.log(`Arrow function this.name: ${this?.name}`);
     }
 };
 
