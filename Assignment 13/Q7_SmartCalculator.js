@@ -1,16 +1,8 @@
 "use strict";
 
-// Q7: Smart Calculator
 const operations = ["add", "divide", "power", "root", "subtract"];
 const num1 = 25;
 const num2 = 0;
-
-class InvalidOperationError extends Error {
-    constructor(operation) {
-        super(`Unsupported operation: ${operation}`);
-        this.name = "InvalidOperationError";
-    }
-}
 
 function calculate(operation, firstNumber, secondNumber) {
     switch (operation) {
@@ -27,11 +19,10 @@ function calculate(operation, firstNumber, secondNumber) {
         case "subtract":
             return firstNumber - secondNumber;
         default:
-            throw new InvalidOperationError(operation);
+            throw new Error(`Unsupported operation: ${operation}`);
     }
 }
 
-// Run every listed operation to demonstrate successful results and error handling.
 for (const operation of operations) {
     try {
         const result = calculate(operation, num1, num2);
@@ -41,7 +32,6 @@ for (const operation of operations) {
     }
 }
 
-// Additional edge-case demonstrations for the custom errors.
 for (const [operation, first, second] of [["root", -9, 0], ["multiply", 4, 5]]) {
     try {
         console.log(`Result: ${calculate(operation, first, second)}`);
