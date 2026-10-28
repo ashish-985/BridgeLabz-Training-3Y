@@ -1,11 +1,9 @@
-// Q8: Employee Salary Projection
-
-let currentSalary = 40000; // Starting monthly salary in rupees.
-const annualIncrementRate = 8; // Annual increment percentage.
+let currentSalary = 40000;
+const annualIncrementRate = 8;
 const salaryProjection = [];
 
 for (let year = 1; year <= 5; year++) {
-    // Apply the yearly increment to the current salary.
+
     currentSalary *= 1 + annualIncrementRate / 100;
 
     salaryProjection.push({
@@ -15,5 +13,4 @@ for (let year = 1; year <= 5; year++) {
     });
 }
 
-// Display all five years in a formatted table.
 console.table(salaryProjection);
